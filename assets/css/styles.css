@@ -4,11 +4,17 @@
     box-sizing: border-box;
 }
 
+:root {
+    --maincolour: rgb(106, 141, 86);
+    --secondarycolour: rgb(174, 154, 105);
+    --thirdcolour: rgb(73, 73, 73);
+}
+
 /* Navigation Bar */
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: rgb(106, 141, 86);
+    background-color: var(--maincolour);
     position: sticky;
     top: 0;
 
@@ -20,18 +26,24 @@
 }
 
 .navbar ul li {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
     font-size: 20px;
 }
 
 .navbar ul li a {
     text-decoration: none;
-    color: rgb(73, 73, 73);
+    color: var(--thirdcolour);
     padding: 8px 35px;
     transition: all .5s ease;
 }
 .navbar ul li a:hover {
-    background-color: rgb(174, 154, 105);
+    background-color: var(--secondarycolour);
     color: white;
     box-shadow: 0 0 10px black;
+}
+
+/* Home */
+#home {
+    display: flex;
+    flex-direction: column;
 }
