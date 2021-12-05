@@ -100,3 +100,51 @@
     font-weight: bolder;
 }
 
+/* About */
+#about {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: var(--seethroughmain);
+    color: var(--thirdcolour);
+}
+#pic {
+    display: flex;
+}
+
+#pic img {
+    width: 575px;
+    height: 400px;
+    border-radius: 10px 10px 10px 10px;
+    transition: ease 1s;
+}
+
+#pic img:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px white;
+}
+
+#intro {
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    padding-left: 10px;
+    color: var(--thirdcolour);
+}
+
+#intro h2 {
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px 10px 10px 10px;
+    transition: ease 1s;
+}
+
+#intro h2:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px;
+}
