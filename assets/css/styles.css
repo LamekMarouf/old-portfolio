@@ -8,7 +8,8 @@
     --maincolour: rgb(31, 31, 31);
     --secondarycolour: rgb(63, 63, 63);
     --thirdcolour: rgb(199, 199, 199);
-    --seethroughmain: rgba(0, 0, 0, 0.5)
+    --seethroughmain: rgba(0, 0, 0, 0.5);
+    --curvedborder: 10px 10px 10px 10px;
 }
 
 /* Navigation Bar */
@@ -50,10 +51,10 @@
     display: flex;
     flex-direction: column;
     background-color: var(--seethroughmain);
-    height: 840px;
+    height: 1200px;
     justify-content: center;
     align-items: center;
-    color: var(--thirdcolour);
+
 }
 
 #home::before{
@@ -62,7 +63,7 @@
     top: 0;
     right: 0;
     background: url('coding.jpg') no-repeat center center/cover;
-    height: 1900px;
+    height: 2500px;
     width: 100%;
     z-index: -1;
     opacity: .8;
@@ -81,6 +82,7 @@
     text-align: center;
     font-size: 3rem;
     margin: 40px 0px;
+    color: var(--thirdcolour);
 }
 
 .btn {
@@ -116,7 +118,7 @@
 #pic img {
     width: 575px;
     height: 400px;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: var(--curvedborder);
     transition: ease 1s;
 }
 
@@ -140,11 +142,37 @@
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid white;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: var(--curvedborder);
     transition: ease 1s;
 }
 
 #intro h2:hover {
     cursor: pointer;
     box-shadow: 0 0 30px;
+}
+
+/* Portfolio */
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--seethroughmain);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img {
+    width: 360px;
+    height: 240px;
+    margin-bottom: 20px;
+    border-radius: var(--curvedborder);
+    transition: ease 0.5s;
+}
+
+.gallery img:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px green, 0 0 15px green, 0 0 20px green;
 }
