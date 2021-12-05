@@ -45,3 +45,58 @@
     box-shadow: 0 0 10px white;
 }
 
+/* Home */
+#home {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--seethroughmain);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: var(--thirdcolour);
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('coding.jpg') no-repeat center center/cover;
+    height: 1900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+}
+
+.headings {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    margin: 40px 0px;
+}
+
+.btn {
+    padding: 15px 45px;
+    background-color: var(--maincolour);
+    border: 1px solid var(--secondarycolour);
+    color: var(--thirdcolour);
+    outline: none;
+    transition: 1s ease;
+}
+
+.btn:hover {
+    background-color: var(--secondarycolour);
+    color: var(--thirdcolour);
+    box-shadow: 0 0 10px var(--secondarycolour), 0 0 15px var(--secondarycolour), 0 0 20px var(--secondarycolour);
+    cursor: pointer;
+    font-weight: bolder;
+}
+
