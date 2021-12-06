@@ -5,7 +5,7 @@
 }
 
 :root {
-    --maincolour: rgb(31, 31, 31);
+    --maincolour: rgb(43, 43, 43);
     --secondarycolour: rgb(63, 63, 63);
     --thirdcolour: rgb(199, 199, 199);
     --seethroughmain: rgba(0, 0, 0, 0.5);
@@ -167,7 +167,7 @@ a {
 #portfolio {
     display: flex;
     flex-direction: column;
-    background-color: var(--seethroughmain);
+    background-color: var(--maincolour);
     align-items: center;
 }
 
